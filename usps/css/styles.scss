@@ -1,0 +1,33 @@
+@import "reset";
+@import "variables";
+body{
+	color: $globalBody;
+}
+header {
+	background-color: $primaryColor;
+}
+
+.hero{
+	height: 250px;
+	background-image: url("../img/sky.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+main{
+	background-color: $mainColor;
+}
+
+article{
+	background-color: $articleColor;
+	width: 800px;
+	
+}
+
+footer{
+	color: $footerCharColor;
+	background-color: $footerColor;
+	min-height: 60px;
+	text-align: justify;
+	padding: 20px;
+}
