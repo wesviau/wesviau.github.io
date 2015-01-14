@@ -1,1 +1,155 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body{color:#333}header{background-color:#c0e6fc}.hero{height:250px;background-image:url("../img/sky.jpg");background-size:100%;background-repeat:no-repeat}main{background-color:grey}article{background-color:#fff;width:800px}footer{color:#fefefe;background-color:#4a4a4a;min-height:60px;text-align:justify;padding:20px}
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+/* line 17, /Users/wesviau/Desktop/wesviau/usps/css/reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, /Users/wesviau/Desktop/wesviau/usps/css/reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 30, /Users/wesviau/Desktop/wesviau/usps/css/reset */
+body {
+  line-height: 1; }
+
+/* line 33, /Users/wesviau/Desktop/wesviau/usps/css/reset */
+ol, ul {
+  list-style: none; }
+
+/* line 36, /Users/wesviau/Desktop/wesviau/usps/css/reset */
+blockquote, q {
+  quotes: none; }
+
+/* line 40, /Users/wesviau/Desktop/wesviau/usps/css/reset */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 44, /Users/wesviau/Desktop/wesviau/usps/css/reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 4, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* line 8, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/* line 15, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+body {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200; }
+
+/* line 20, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+header {
+  background-color: #c0e6fc; }
+  /* line 22, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+  header img {
+    width: 250px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 0 auto;
+    display: block; }
+  /* line 30, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+  header li {
+    display: inline-block;
+    width: 25%;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    /* line 38, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+    header li a {
+      transition: color 150ms ease-in-out;
+      color: rgba(80, 158, 231, 0.5); }
+      /* line 41, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+      header li a:hover {
+        color: #509ee7; }
+
+/* line 48, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+.hero {
+  height: 250px;
+  background-image: url("../img/sky.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+/* line 55, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+main {
+  background-color: grey;
+  padding-bottom: 60px;
+  position: relative; }
+  /* line 60, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+  main img {
+    display: block;
+    width: 20%;
+    position: absolute;
+    left: 15%;
+    right: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #aeaeae;
+    border: 1px solid #444;
+    transition: left 200ms ease-in-out; }
+    /* line 71, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+    main img:hover {
+      left: 5%; }
+  /* line 77, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+  main article {
+    float: right;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+    width: 70%;
+    margin-bottom: 60px;
+    margin-right: 10%;
+    padding: 0 40px 60px; }
+    /* line 86, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+    main article:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100px;
+      background-color: white;
+      position: absolute;
+      left: 0;
+      top: -100px;
+      background-image: url("../img/mail.png");
+      background-repeat: repeat-x; }
+    /* line 98, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+    main article h1 {
+      font-size: 40px;
+      margin-bottom: 60px; }
+    /* line 108, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+    main article p {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 30px; }
+    /* line 113, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+    main article h2 {
+      font-size: 30px;
+      font-family: 'Homemade Apple', cursive;
+      text-align: right; }
+
+/* line 123, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+footer {
+  background-color: #4a4a4a;
+  padding: 20px; }
+  /* line 126, /Users/wesviau/Desktop/wesviau/usps/css/styles.scss */
+  footer p {
+    color: #777; }
